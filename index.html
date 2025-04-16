@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPEX ARMOR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1576267423413-0b1aef6f0b6a?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero img {
+      width: 150px;
+      margin-bottom: 25px;
+      filter: drop-shadow(0 0 10px #00ff00);
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      color: #00ff00;
+      text-shadow: 2px 2px 6px #000;
+    }
+    .hero p {
+      font-size: 1.4rem;
+      margin-top: 10px;
+      text-shadow: 1px 1px 4px #000;
+    }
+    .btn {
+      margin-top: 35px;
+      padding: 15px 35px;
+      background-color: #00ff00;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      box-shadow: 0 0 10px #00ff00;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #0f0;
+      box-shadow: 0 0 20px #00ff00;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2.8rem;
+      margin-bottom: 50px;
+      color: #00ff00;
+      text-align: center;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+    .service {
+      background: linear-gradient(145deg, #1a1a1a, #111);
+      padding: 30px;
+      border-radius: 16px;
+      border: 1px solid #00ff00;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #00ff00;
+    }
+    .service h3 {
+      color: #00ff00;
+      margin-bottom: 15px;
+    }
+    .service img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+    .service p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .footer {
+      background-color: #111;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="https://opexarmor.b-cdn.net/logo-hexagonal.png" alt="OPEX ARMOR Logo">
+    <h1>Prépare-toi comme un opérateur</h1>
+    <p>Formation CQB – Coaching Physique – Nutrition – Équipement</p>
+    <a href="#services" class="btn">Découvre nos services</a>
+  </div>
+
+  <section id="services">
+    <h2 class="section-title">Nos Services</h2>
+    <div class="service-grid">
+      <div class="service">
+        <img src="https://opexarmor.b-cdn.net/cqb-operateur.jpg" alt="CQB">
+        <h3>Entraînement CQB</h3>
+        <p>Formations tactiques en combat rapproché. Stages immersifs, coaching personnalisé, scénarios réalistes pour civils et pros.</p>
+      </div>
+      <div class="service">
+        <img src="https://opexarmor.b-cdn.net/fitness-camo.jpg" alt="Fitness">
+        <h3>Coaching Physique</h3>
+        <p>Programmes de renforcement, prise de masse, sèche ou remise en forme. Encadrement sur mesure selon ton objectif.</p>
+      </div>
+      <div class="service">
+        <img src="https://opexarmor.b-cdn.net/nutrition-supplement.jpg" alt="Nutrition">
+        <h3>Nutrition & Suivi</h3>
+        <p>Plans alimentaires personnalisés, compléments adaptés, suivi de ton évolution pour maximiser les résultats.</p>
+      </div>
+      <div class="service">
+        <img src="https://opexarmor.b-cdn.net/forces-entrainement.jpg" alt="Préparation PRO">
+        <h3>Préparation Forces de l'ordre</h3>
+        <p>Coaching physique, mental et tactique pour candidats et agents : pompiers, policiers, militaires, sécurité privée.</p>
+      </div>
+      <div class="service">
+        <img src="https://opexarmor.b-cdn.net/scenario-intervention.jpg" alt="Scénarios">
+        <h3>Scénarios Premium</h3>
+        <p>Accès à des entraînements sur mesure incluant extraction, infiltration, interventions avec véhicules et milieux variés.</p>
+      </div>
+      <div class="service">
+        <img src="https://opexarmor.b-cdn.net/produits-opex.jpg" alt="Merch">
+        <h3>Merch & Suppléments</h3>
+        <p>Casquettes, vêtements camo, protéines, pre-workout et bundles exclusifs. Disponible pour Canada et USA.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 OPEX ARMOR. Tous droits réservés — contact@opexarmor.com
+  </div>
+</body>
+</html>
